@@ -1,5 +1,5 @@
 
-# Wikipedia Web Scraper ![Python Versions]
+# Wikipedia Web Scraper
 
 A simple bot to get the basic info from the Wikipedia page based on the keyword entered. 
 
