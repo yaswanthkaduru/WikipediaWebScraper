@@ -1,7 +1,7 @@
 
 # Wikipedia Web Scraper
 
-A simple bot to get the basic info from the Wikipedia page based on the keyword entered. 
+A simple bot to get the basic info from the Wikipedia page based on the entered keyword . 
 
 ## Features
 * It has built-in IP rotation implemented using Torpy (A Tor Protocol)
@@ -14,6 +14,5 @@ A simple bot to get the basic info from the Wikipedia page based on the keyword 
 4. Data processing code snippet is yet to be added.
 
 ## Future Work
-1. Data processing and storage in CSV.
-2. Data Analysis and insights.
-3. Sending an automated email of the insights.
+1. Data Analysis and insights.
+2. Sending an automated email of the insights.
