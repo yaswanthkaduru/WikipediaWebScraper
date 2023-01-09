@@ -8,7 +8,7 @@ A simple bot to get the basic info from the Wikipedia page based on the keyword 
 * User-Agent rotation is also included to avoid getting blocked from the website.
 
 ## Notes
-1. Make sure you update the User-Agent list in the code by visiting:  https://developers.whatismybrowser.com/useragents/explore/
+1. Make sure to update the User-Agent list in the code by visiting:  https://developers.whatismybrowser.com/useragents/explore/
 2. In case header info is not suiting your needs, you can get your header information by visiting: http://httpbin.org/get
 3. Data processing code snippet is yet to be added.
 
