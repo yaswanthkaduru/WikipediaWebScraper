@@ -1,8 +1,11 @@
 
 # Wikipedia Web Scraper
 
-A simple bot to get the basic info from the Wikipedia page based on the keyword user entered. It has built-in IP rotation implemented using Torpy (A Tor Protocol), and User-Agent rotation to avoid getting blocked from the website. 
+A simple bot to get the basic info from the Wikipedia page based on the keyword user entered. 
 
+## Features
+* It has built-in IP rotation implemented using Torpy (A Tor Protocol)
+* User-Agent rotation is also included to avoid getting blocked from the website.
 
 ## Notes
 1. Make sure you update the User-Agent list in the code by visiting:  https://developers.whatismybrowser.com/useragents/explore/
