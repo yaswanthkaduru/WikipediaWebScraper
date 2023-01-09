@@ -1,7 +1,7 @@
 
 # Wikipedia Web Scraper
 
-A simple bot to get the basic info from the Wikipedia page based on the keyword user entered. 
+A simple bot to get the basic info from the Wikipedia page based on the keyword entered. 
 
 ## Features
 * It has built-in IP rotation implemented using Torpy (A Tor Protocol)
