@@ -9,13 +9,15 @@ import csv
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Getting the keyword from the user
-Search_Word = input("Enter the Keyword: ")
+def geturl():
+    search_word = input("Enter the Keyword: ")
+    # Generating URL from the entered keyword
+    cap_search_word = string.capwords(search_word)
+    list_cap_search_word = cap_search_word.split()
+    url_extension = "_".join(list_cap_search_word)
+    url = "https://en.wikipedia.org/wiki/" + url_extension
+    return url
 
-# Generating URL from the entered keyword
-Cap_Search_Word = string.capwords(Search_Word)
-List_Cap_Search_Word = Cap_Search_Word.split()
-URL_Extension = "_".join(List_Cap_Search_Word)
-URL = "https://en.wikipedia.org/wiki/" + URL_Extension
 
 # List of random user agents from
 # "https://developers.whatismybrowser.com/useragents/explore/operating_system_name/macos/"
@@ -68,5 +70,10 @@ def wikipedia_bot(url):
             thewriter.writerow(heading)
             thewriter.writerow(description)
 
-
-wikipedia_bot(URL)
+while True:
+    wikipedia_bot(geturl())
+    reaction = input("Press Y to continue OR press any other key to exist: ")
+    if reaction.lower() == "y":
+        wikipedia_bot(geturl())
+    else:
+        break
