@@ -49,7 +49,6 @@ def wikipedia_bot(url):
     page = send_requests(url, HEADERS)
     soup = BeautifulSoup(page, 'html.parser')
     soup1 = BeautifulSoup(soup.prettify(), 'html.parser')
-    # print(soup1)
     details = soup1('table', {'class': 'infobox'})
     heading = []
     description = []
