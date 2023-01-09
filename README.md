@@ -12,4 +12,4 @@ A simple bot to get the basic info from the Wikipedia page based on the keyword 
 ## Future Work
 1. Data processing and storage in CSV.
 2. Data Analysis and insights.
-3. Sending an automated email regarding the insights.
+3. Sending an automated email of the insights.
