@@ -10,7 +10,7 @@ A simple bot to get the basic info from the Wikipedia page based on the entered 
 ## Notes
 1. Make sure to update the User-Agent list in the code by visiting:  https://developers.whatismybrowser.com/useragents/explore/
 2. In case header info is not suiting your needs, you can get your header information by visiting: http://httpbin.org/get
-3. The keyword entered must be full name of the person. Example: Stephen King, Agatha Christie, and Danielle Steel.
+3. Example Keywords: Stephen King, Agatha Christie, and J. K. Rowling.
 4. Data processing code snippet is yet to be added.
 
 ## Future Work
