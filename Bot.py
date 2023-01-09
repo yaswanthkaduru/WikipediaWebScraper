@@ -40,7 +40,6 @@ HEADERS = {"User-Agent": random.choice(user_agent_list)}
 def send_requests(url, headers):
     with TorRequests() as tor_requests:
         with tor_requests.get_session() as sess:
-            # print(sess.get("http://httpbin.org/ip").json())
             html_content = sess.get(url, headers=headers, timeout=10).text
             return html_content
 
