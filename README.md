@@ -5,4 +5,11 @@ A simple bot to get the basic info from the Wikipedia page based on the keyword 
 
 
 ## Notes
-Make sure you update the User-Agent list in the code by visiting:  https://developers.whatismybrowser.com/useragents/explore/
+1. Make sure you update the User-Agent list in the code by visiting:  https://developers.whatismybrowser.com/useragents/explore/
+2. In case header info is not suiting your needs, you can get your header information by visiting: http://httpbin.org/get
+3. Data processing code snippet is yet to be added.
+
+## Future Work
+1. Data processing and storage in CSV.
+2. Data Analysis and insights.
+3. Sending an automated email regarding the insights.
