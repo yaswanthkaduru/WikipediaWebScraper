@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import urllib3
 import random
 import string
+import csv
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -32,10 +33,7 @@ user_agent_list = [
 ]
 
 # Generated using "http://httpbin.org/get"
-HEADERS = {"User-Agent": random.choice(user_agent_list), "Accept-Encoding": "gzip, deflate",
-           "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,"
-                     "image/apng*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-           "DNT": "1", "Connection": "close", "Upgrade-Insecure-Requests": "1"}
+HEADERS = {"User-Agent": random.choice(user_agent_list)}
 
 
 # Function for sending requests
@@ -67,10 +65,10 @@ def wikipedia_bot(url):
         heading = [item.strip() for item in heading if str(item)]
         description = [item.strip() for item in description if str(item)]
         description = [item.replace('\n', ' ').replace('\r', '') for item in description]
-        return heading, description
+        with open('Wiki_Data.csv', 'w', encoding='UTF8', newline='') as f:
+            thewriter = csv.writer(f)
+            thewriter.writerow(heading)
+            thewriter.writerow(description)
 
 
-row_header, row_description = wikipedia_bot(URL)
-
-for i in range(len(row_header)):
-    print(f'{row_header[i]} :: {row_description[i]} \n')
+wikipedia_bot(URL)
